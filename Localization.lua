@@ -355,14 +355,16 @@ Shortcuts:
 If checked, Pawn's socketing advisor will still suggest appropriate gems for low-level items, but sockets will be ignored in calculations and socketed items will not show up as upgrades as often.
 
 If unchecked, Pawn will calculate values for items as if they were socketed in the way that maximizes the item's value, regardless of the item's level.]=],
-		["OptionsIgnoreItemUpgradesCheck"] = "Ignore valor and baleful upgrades",
-		["OptionsIgnoreItemUpgradesCheckTooltip"] = [=[Enable this option to have Pawn ignore the potential for Valor upgrades and Empowered Baleful items when calculating item values.
+                ["OptionsIgnoreItemUpgradesCheck"] = "Ignore valor and baleful upgrades",
+                ["OptionsIgnoreItemUpgradesCheckTooltip"] = [=[Enable this option to have Pawn ignore the potential for Valor upgrades and Empowered Baleful items when calculating item values.
 
 If checked, Pawn will treat upgradeable items as they are and will not assume that you would use Valor and Empowered Apexis Fragments to improve the item when determining whether an item is better than what you currently have.
 
 If unchecked, Pawn will treat those items assuming that you would maximize their potential with Valor and Empowered Apexis Fragments.  This could cause a level 650 baleful item to appear as a significant upgrade over a level 670 item from Blackrock Foundry, since the baleful item could potentially be improved to level 705 through valor and Apexis.]=],
-		["OptionsInventoryIcon"] = "Show icons next to tooltips",
-		["OptionsInventoryIconTooltip"] = "Enable this option to show inventory icons next to item link windows.",
+               ["OptionsIgnoreHeirloomUpgradesCheck"] = "Ignore upgrades for heirloom-equipped slots",
+               ["OptionsIgnoreHeirloomUpgradesCheckTooltip"] = "Enable this option to have Pawn skip comparing items in slots where you're wearing an heirloom item.",
+                ["OptionsInventoryIcon"] = "Show icons next to tooltips",
+                ["OptionsInventoryIconTooltip"] = "Enable this option to show inventory icons next to item link windows.",
 		["OptionsItemIDs"] = "Show item IDs",
 		["OptionsItemIDsTooltip"] = [=[Enable this option to have Pawn display the item ID of every item you come across, as well as the IDs of all enchantments and gems.
 

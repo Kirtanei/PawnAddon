@@ -361,6 +361,8 @@ Pawn 사용자 설정의 더 자세한 정보는, 애드온에 포함된 help �
 선택하면 업그레이드 가능한 아이템을 당신이 가지고 있는 것보다 더 좋은지 판단할 때 용맹 점수 강화나 힘이 깃든 에펙시스 파편을 사용하지 않은 것으로 가정합니다.
 
 선택하지 않으면 업그레이드 할 수 있는 아이템들의 잠재성을 용맹 점수나 힘이 깃든 에펙시스 파편으로 극대화시킨 것으로 가정합니다. 불길한 장비는 용맹 점수와 에펙시스를 통해 705 레벨까지 강화할 수 있기 때문에 650 레벨의 불길한 장비가 670 레벨의 검은바위 용광로 아이템보다 더 좋은 아이템으로 나타나게 됩니다.]=],
+			["OptionsIgnoreHeirloomUpgradesCheck"] = "Ignore upgrades for heirloom-equipped slots",
+			["OptionsIgnoreHeirloomUpgradesCheckTooltip"] = "Enable this option to have Pawn skip comparing items in slots where you're wearing an heirloom item.",
 		["OptionsInventoryIcon"] = "툴팁 옆에 아이콘 표시",
 		["OptionsInventoryIconTooltip"] = "이 옵션을 켜면 아이템 링크 창 옆에 인벤토리 아이콘을 표시합니다.",
 		["OptionsItemIDs"] = "아이템 ID 표시",

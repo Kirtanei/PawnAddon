@@ -370,6 +370,8 @@ Pawn會與你身上的裝備比較]=],
 選中後，插件只會計算裝備當前狀態的屬性評估。
 
 未選中的情況下，插件會計算本件裝備最大提升後潛在的屬性評估，即用勇氣點數等升級滿裝備裝等後的屬性。此屬性將顯示包含在裝備當前屬性後的括號內。]=],
+			["OptionsIgnoreHeirloomUpgradesCheck"] = "Ignore upgrades for heirloom-equipped slots",
+			["OptionsIgnoreHeirloomUpgradesCheckTooltip"] = "Enable this option to have Pawn skip comparing items in slots where you're wearing an heirloom item.",
 		["OptionsInventoryIcon"] = "顯示物品圖標",
 		["OptionsInventoryIconTooltip"] = "開啟此選項以在物品連結視窗旁顯示物品圖標",
 		["OptionsItemIDs"] = "顯示物品ID",

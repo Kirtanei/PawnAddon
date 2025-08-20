@@ -355,6 +355,8 @@ Si non cochée, Pawn calculera les valeurs pour les éléments comme s'ils étai
 Si validé, Pawn traitera les pièces pouvant être amélioré tels qu'ils sont et ne considérera pas que vous pouvez utiliser des Fragments Apexis de Vaillance ou Torve afin d'améliorer la pièce au moment de déterminer si une pièce est meilleur que celle en votre possession.
 Si non-validé, Pawn traitera ces pièces en assumant que vous les améliorerez au maximum avec des Fragments Apexis de Vaillance ou Torve. Cela pourrait faire qu'un équipement Torve de niveau 650 apparaisse comme une amélioration significative par rapport à un niveau 670 de la Fonderie de Blackrock, comme la pièce Torve pourrait être amélioré au niveau 705 grave aux Vaillances et Apexis
 ]=],
+			["OptionsIgnoreHeirloomUpgradesCheck"] = "Ignore upgrades for heirloom-equipped slots",
+			["OptionsIgnoreHeirloomUpgradesCheckTooltip"] = "Enable this option to have Pawn skip comparing items in slots where you're wearing an heirloom item.",
 		["OptionsInventoryIcon"] = "Afficher les icônes à côté des infobulles",
 		["OptionsInventoryIconTooltip"] = "Cette option permet d'afficher l'icône d'inventaire à coté de la fenêtre de lien de l objet",
 		["OptionsItemIDs"] = "Affiche les ID des objets",

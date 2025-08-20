@@ -1447,15 +1447,23 @@
 						<Scripts><OnClick>PawnUIFrame_UpgradeTrackingList_SetSelection(true)</OnClick></Scripts>
 					</CheckButton>
 
-					<CheckButton name="PawnUIFrame_ShowItemLevelUpgradesCheck" inherits="PawnUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="25" y="-430" /></Offset></Anchor></Anchors>
-						<Layers><Layer level="ARTWORK">
-							<FontString name="$parent_Label" inherits="PawnUICheckboxLabelTemplate" text="PawnUIFrame_ShowItemLevelUpgradesCheck_Text" />
-						</Layer></Layers>
-						<Scripts><OnClick function="PawnUIFrame_ShowItemLevelUpgradesCheck_OnClick" /></Scripts>
-					</CheckButton>
+                                        <CheckButton name="PawnUIFrame_ShowItemLevelUpgradesCheck" inherits="PawnUICheckboxTemplate">
+                                                <Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="25" y="-430" /></Offset></Anchor></Anchors>
+                                                <Layers><Layer level="ARTWORK">
+                                                        <FontString name="$parent_Label" inherits="PawnUICheckboxLabelTemplate" text="PawnUIFrame_ShowItemLevelUpgradesCheck_Text" />
+                                                </Layer></Layers>
+                                                <Scripts><OnClick function="PawnUIFrame_ShowItemLevelUpgradesCheck_OnClick" /></Scripts>
+                                        </CheckButton>
 
-					<!-- Advisor options -->
+                                       <CheckButton name="PawnUIFrame_IgnoreHeirloomUpgradesCheck" inherits="PawnUICheckboxTemplate">
+                                               <Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="25" y="-450" /></Offset></Anchor></Anchors>
+                                               <Layers><Layer level="ARTWORK">
+                                                       <FontString name="$parent_Label" inherits="PawnUICheckboxLabelTemplate" text="PawnUIFrame_IgnoreHeirloomUpgradesCheck_Text" />
+                                               </Layer></Layers>
+                                               <Scripts><OnClick function="PawnUIFrame_IgnoreHeirloomUpgradesCheck_OnClick" /></Scripts>
+                                       </CheckButton>
+
+                                        <!-- Advisor options -->
 					
 					<CheckButton name="PawnUIFrame_ShowBagUpgradeAdvisorCheck" inherits="PawnUICheckboxTemplate">
 						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="300" y="-85" /></Offset></Anchor></Anchors>

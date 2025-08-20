@@ -627,7 +627,8 @@ function PawnInitializeOptions()
 		if PawnCommon.ShowLootUpgradeAdvisor == nil then PawnCommon.ShowLootUpgradeAdvisor = true end
 		if PawnCommon.ShowQuestUpgradeAdvisor == nil then PawnCommon.ShowQuestUpgradeAdvisor = true end
 	end
-	if PawnCommon.ShowSocketingAdvisor == nil then PawnCommon.ShowSocketingAdvisor = true end
+       if PawnCommon.ShowSocketingAdvisor == nil then PawnCommon.ShowSocketingAdvisor = true end
+       if PawnCommon.IgnoreHeirloomUpgrades == nil then PawnCommon.IgnoreHeirloomUpgrades = false end
 
 	-- Now, migrate all scales from this character over to PawnCommon.
 	if not PawnCommon.Scales then PawnCommon.Scales = {} end
@@ -3720,10 +3721,13 @@ function PawnIsItemAnUpgrade(Item, DoNotRescan)
 						elseif Value2 and not Value1 then
 							BestData = { Value2, ItemLink2, PawnGetMaxLevelItemIsUsefulHeirloom(Item2) }
 						end
-					end
-					if BestData then
-						local BestValue = BestData[4] or BestData[1]
-						local BestItem = BestData[5] or BestData[2]
+                                       end
+                                       if PawnCommon.IgnoreHeirloomUpgrades and BestData then
+                                               if PawnIsItemAnHeirloom(PawnGetItemData(BestData[2])) or PawnIsItemAnHeirloom(PawnGetItemData(BestData[5])) then return nil end
+                                       end
+						if BestData then
+							local BestValue = BestData[4] or BestData[1]
+							local BestItem = BestData[5] or BestData[2]
 						-- local BestMaxHeirloomLevel = BestData[6] or BestData[3]
 						if BestValue then
 							-- Don't bother looking for this item's value if we don't have a best item for this slot.
@@ -4490,7 +4494,11 @@ function PawnGetMaxLevelItemIsUsefulHeirloom(Item)
 end
 
 function PawnIsItemAnArtifact(Item)
-	if Item and Item.Rarity and Item.Rarity == 6 then return true else return false end
+        if Item and Item.Rarity and Item.Rarity == 6 then return true else return false end
+end
+
+function PawnIsItemAnHeirloom(Item)
+       if Item and Item.Rarity and Item.Rarity == 7 then return true else return false end
 end
 
 function PawnOnSpecChanged()

@@ -400,6 +400,8 @@ Si está deseleccionado, Pawn calculará valores para objetos como si tuvieran l
 Si esta marcado, Pawn tratará los objetos mejorables como son actualmente y no asumirá que usarás Valor y Fragmentos Apexis Mejorados para mejorar el objeto al determinar si el objeto es mejor que el que tienes actualmente.
 
 Si no esta marcado, Pawn tratará esos objetos asumiendo que maximizaras su potencial con Valor y Fragmentos Apexis Mejorados. Esto podría causar que un objeto torvo de nivel 650 apareciera como una mejora notable respecto a un objeto nivel 670 de Fundición Rocanegra, ya que el objeto torvo podría mejorarse potencialmente hasta el nivel 705 a través de Valor y Apexis.]=],
+			["OptionsIgnoreHeirloomUpgradesCheck"] = "Ignore upgrades for heirloom-equipped slots",
+			["OptionsIgnoreHeirloomUpgradesCheckTooltip"] = "Enable this option to have Pawn skip comparing items in slots where you're wearing an heirloom item.",
 		["OptionsInventoryIcon"] = "Mostrar iconos de inventario",
 		["OptionsInventoryIconTooltip"] = "Habilita ésta opción para mostrar el incono de los objetos enlazados en el chat.",
 		["OptionsItemIDs"] = "Mostrar IDs de objetos",
