@@ -360,6 +360,8 @@ Pawn插件默认已经参考AskMrRobot给所有职业的专精建立了标准评
 选中后，插件只会计算装备当前状态的属性评估。
 
 未选中的情况下，插件会计算本件装备最大提升后潜在的属性评估，即用勇气点数等升级满装备装等后的属性。此属性将显示包含在装备当前属性后的括号内。]=],
+			["OptionsIgnoreHeirloomUpgradesCheck"] = "Ignore upgrades for heirloom-equipped slots",
+			["OptionsIgnoreHeirloomUpgradesCheckTooltip"] = "Enable this option to have Pawn skip comparing items in slots where you're wearing an heirloom item.",
 		["OptionsInventoryIcon"] = "显示物品图标",
 		["OptionsInventoryIconTooltip"] = "在你点击聊天窗口的物品显示其信息的时候，在信息旁边显示该物品的图标。",
 		["OptionsItemIDs"] = "显示物品ID",

@@ -349,12 +349,14 @@ Wenn diese Option aktiviert ist, schlägt Pawn immer noch passende Edelsteine f�
 
 Wenn diese Option deaktiviert ist, berechnet Pawn die Werte für Gegenstände so, als ob sie gesockelt wären, die den Wert des Gegenstandes maximiert, unabhängig von der Stufe des Gegenstandes.]=],
 		["OptionsIgnoreItemUpgradesCheck"] = "Ignoriere Tapferkeit und Machtvolle Verbesserungen",
-		["OptionsIgnoreItemUpgradesCheckTooltip"] = [=[Aktiviere diese Option, wenn Pawn bei der Berechnung von Gegenstandswerten das Potenzial für Tapferkeits Verbesserungen und Machtvolle Gegenstände ignorieren soll.
+               ["OptionsIgnoreItemUpgradesCheckTooltip"] = [=[Aktiviere diese Option, wenn Pawn bei der Berechnung von Gegenstandswerten das Potenzial für Tapferkeits Verbesserungen und Machtvolle Gegenstände ignorieren soll.
 
 Wenn diese Option aktiviert ist, wird Pawn nachrüstbare Gegenstände so behandeln, wie sie sind und nicht davon ausgehen, dass Tapferkeits- und Apexis-Fragmenten verwendet werden um den Gegenstand zu verbessern. Falls festgestellt wird, ob ein Gegenstand besser ist als das, was du gerade hast.
 
 Wenn diese Option nicht aktiviert ist, wird Pawn diese Gegenstände behandeln als ob ihr maximales Potential mit Tapferkeits- und Apexis-Fragmenten aufgewertet wurde. Dies könnte dazu führen, dass ein machtvoller Gegenstand der Stufe 650 eine signifikante Verbesserung gegenüber einem Gegenstand der Stufe 670 aus der Schwarzfels-Gießerei erscheint, da der machtvolle Gegenstand möglicherweise durch Tapferkeit und Apexis auf Stufe 705 verbessert werden könnte.]=],
-		["OptionsInventoryIcon"] = "Zeige Symbole neben Tooltips",
+               ["OptionsIgnoreHeirloomUpgradesCheck"] = "Ignore upgrades for heirloom-equipped slots",
+               ["OptionsIgnoreHeirloomUpgradesCheckTooltip"] = "Enable this option to have Pawn skip comparing items in slots where you're wearing an heirloom item.",
+               ["OptionsInventoryIcon"] = "Zeige Symbole neben Tooltips",
 		["OptionsInventoryIconTooltip"] = "Aktiviere diese Option, um Inventarsymbole neben dem Gegenstandsfenster anzuzeigen.",
 		["OptionsItemIDs"] = "Gegenstands-IDs anzeigen",
 		["OptionsItemIDsTooltip"] = [=[Aktiviere diese Option, damit Pawn die Gegenstands-ID jedes Gegenstands, auf den du stößt, sowie die IDs aller Verzauberungen und Edelsteine anzeigt.

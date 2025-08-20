@@ -361,6 +361,8 @@ Se disattivata, Pawn calcolerà il valore per gli oggetti come se fossero incast
 Se abilitata, Pawn tratterà gli oggetti migliorabili così come sono, e non terrà conto che potresti usare i punti Valore o il Frammento Apexis Potenziato per migliorare l'oggetto quando determina se un oggetto è migliore di quello che attualmente indossi.
 
 Se disabilitata, Pawn tratterà questi oggetti assumento che tu massimizzi il loro potenziale con i punti Valore e il Frammento Apexis Potenziato. Questo potrebbe causare che un oggetto bieco livello 650 appaia come un miglioramento sostanziale rispetto ad un oggetto 670 di Fonderia dei Roccianera, visto che l'oggetto bieco può potenzialmente essere migliorato fino al livello 705 attraverso i punti Valore e i cristalli Apexis.]=],
+			["OptionsIgnoreHeirloomUpgradesCheck"] = "Ignore upgrades for heirloom-equipped slots",
+			["OptionsIgnoreHeirloomUpgradesCheckTooltip"] = "Enable this option to have Pawn skip comparing items in slots where you're wearing an heirloom item.",
 		["OptionsInventoryIcon"] = "Mostra icone accanto ai dialoghi",
 		["OptionsInventoryIconTooltip"] = "Abilita questa opzione per mostrare le icone degli oggetti accanto al rispettivo dialogo.",
 		["OptionsItemIDs"] = "Mostra ID oggetti",

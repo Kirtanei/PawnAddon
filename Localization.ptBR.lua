@@ -362,6 +362,8 @@ Se não estiver marcada, o Pawn vai calcular valores para os itens como se eles 
 Se estiver marcada, o Pawn vai tratar itens passíveis de atualização como estão e não vai assumir que você poderia usar Valor e Fragmento Apexis Potencializado para melhorar o item quando estiver determinando se um item é melhor do que o que você possui.
 
 Se não estiver marcada, o Pawn vai tratar esses itens assumindo que você irá maximizar o seu potencial com Valor e Fragmento Apexis Potencializado. Isso pode fazer com que um item do infortúnio de nível 650 apareça como uma melhoria significante perante um item da Fundição da Rocha Negra de nível 670, uma vez que o item do infortúnio poderia ser melhorado até o nível 705 através de Valor e Fragmento Apexis.]=],
+			["OptionsIgnoreHeirloomUpgradesCheck"] = "Ignore upgrades for heirloom-equipped slots",
+			["OptionsIgnoreHeirloomUpgradesCheckTooltip"] = "Enable this option to have Pawn skip comparing items in slots where you're wearing an heirloom item.",
 		["OptionsInventoryIcon"] = "Mostrar ícones próximo de dicas de ferramentas",
 		["OptionsInventoryIconTooltip"] = "Habilite esta opção para mostrar ícones de inventário próximo ao link de janela de item.",
 		["OptionsItemIDs"] = "Mostrar ID de itens",

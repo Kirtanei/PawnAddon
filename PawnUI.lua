@@ -1960,10 +1960,11 @@ function PawnUIOptionsTabPage_OnShow()
 		PawnUIFrame_ShowBagUpgradeAdvisorCheck:SetChecked(PawnCommon.ShowBagUpgradeAdvisor)
 	end
 	PawnUIFrame_ShowLootUpgradeAdvisorCheck:SetChecked(PawnCommon.ShowLootUpgradeAdvisor)
-	PawnUIFrame_ShowQuestUpgradeAdvisorCheck:SetChecked(PawnCommon.ShowQuestUpgradeAdvisor)
-	PawnUIFrame_ShowSocketingAdvisorCheck:SetChecked(PawnCommon.ShowSocketingAdvisor)
-	PawnUIFrame_ShowReforgingAdvisorCheck:SetChecked(PawnCommon.ShowReforgingAdvisor)
-	PawnUIFrame_ShowItemLevelUpgradesCheck:SetChecked(PawnCommon.ShowItemLevelUpgrades)
+       PawnUIFrame_ShowQuestUpgradeAdvisorCheck:SetChecked(PawnCommon.ShowQuestUpgradeAdvisor)
+       PawnUIFrame_ShowSocketingAdvisorCheck:SetChecked(PawnCommon.ShowSocketingAdvisor)
+       PawnUIFrame_ShowReforgingAdvisorCheck:SetChecked(PawnCommon.ShowReforgingAdvisor)
+       PawnUIFrame_ShowItemLevelUpgradesCheck:SetChecked(PawnCommon.ShowItemLevelUpgrades)
+       PawnUIFrame_IgnoreHeirloomUpgradesCheck:SetChecked(PawnCommon.IgnoreHeirloomUpgrades)
 
 	-- Other options
 	PawnUIFrame_DebugCheck:SetChecked(PawnCommon.Debug)
@@ -2066,7 +2067,11 @@ function PawnUIFrame_ShowReforgingAdvisorCheck_OnClick()
 end
 
 function PawnUIFrame_ShowItemLevelUpgradesCheck_OnClick()
-	PawnCommon.ShowItemLevelUpgrades = PawnUIFrame_ShowItemLevelUpgradesCheck:GetChecked()
+       PawnCommon.ShowItemLevelUpgrades = PawnUIFrame_ShowItemLevelUpgradesCheck:GetChecked()
+end
+
+function PawnUIFrame_IgnoreHeirloomUpgradesCheck_OnClick()
+       PawnCommon.IgnoreHeirloomUpgrades = PawnUIFrame_IgnoreHeirloomUpgradesCheck:GetChecked()
 end
 
 function PawnUIFrame_IgnoreGemsWhileLevelingCheck_OnClick()
