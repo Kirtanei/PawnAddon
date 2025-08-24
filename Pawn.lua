@@ -3723,7 +3723,20 @@ function PawnIsItemAnUpgrade(Item, DoNotRescan)
 						end
                                        end
                                        if PawnCommon.IgnoreHeirloomUpgrades and BestData then
-                                               if PawnIsItemAnHeirloom(PawnGetItemData(BestData[2])) or PawnIsItemAnHeirloom(PawnGetItemData(BestData[5])) then return nil end
+                                               -- If heirloom upgrades are being ignored, compare this item against the
+                                               -- non-heirloom ring when possible.  If both rings are heirlooms, then
+                                               -- there's nothing meaningful to compare against.
+                                               local IsBestHeirloom = PawnIsItemAnHeirloom(PawnGetItemData(BestData[2]))
+                                               local IsSecondHeirloom = PawnIsItemAnHeirloom(PawnGetItemData(BestData[5]))
+                                               if IsBestHeirloom then
+                                                       if IsSecondHeirloom or not BestData[5] then return nil end
+                                                       -- Shift the second-best item to be the best for comparison.
+                                                       BestData[1], BestData[2], BestData[3] = BestData[4], BestData[5], BestData[6]
+                                                       BestData[4], BestData[5], BestData[6] = nil, nil, nil
+                                               elseif IsSecondHeirloom then
+                                                       -- Just ignore the second item if it's an heirloom.
+                                                       BestData[4], BestData[5], BestData[6] = nil, nil, nil
+                                               end
                                        end
 						if BestData then
 							local BestValue = BestData[4] or BestData[1]
